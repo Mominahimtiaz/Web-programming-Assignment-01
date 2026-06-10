@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Our Story</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Condensed heading font -->
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>Our Story</h1>
+
+<h2>Hit the Ground Running</h2>
+
+<p>
+Founded in 2030, Machine Gym emerged from the collective passion of a team of tech enthusiasts, fitness aficionados, and AI experts who shared a common goal: to push the boundaries of what's possible in the realm of machine learning. Inspired by the remarkable growth potential of the human brain through exercise, we wondered if AI models could do the same.
+</p>
+
+<p>
+The concept was simple yet groundbreaking: to train AI models not only through traditional data processing methods, but also by immersing them in the world of physical activity. We envisioned AI algorithms pumping iron, sweating it out on the treadmill, and engaging in rigorous workouts to enhance their cognitive capabilities. Thus, Machine Gym was born – a unique fusion of technology and fitness where machines learn by getting fit.
+</p>
+
+<h2>How Does it Work?</h2>
+
+<p>
+At Machine Gym, we believe in the transformative power of physical fitness not only for humans but also for machines. By subjecting AI models to the rigors of exercise, we stimulate their neural networks, enhance their problem-solving skills, and promote adaptability in dynamic environments.
+</p>
+
+<div class="fact">
+
+<h3>Did you know?</h3>
+
+<p>
+At Machine Gym, our AI models aren't just hitting the weights – they're also mastering dance moves! Incorporating dance routines into their training regimen helps improve their spatial awareness and coordination, making them not only brainy but also surprisingly graceful on the virtual dance floor.
+</p>
+
+</div>
+
+<h2>To the Future</h2>
+
+<p>
+As we continue to push the boundaries of AI innovation, our commitment to excellence remains unwavering. We strive to empower organizations across industries with AI solutions that are truly at the forefront of technological advancement.
+</p>
+
+<p>
+Join us in our quest to unlock the full potential of artificial intelligence through the power of physical fitness. Together, let's redefine the future of technology, one workout at a time.
+</p>
+
+</div>
+
+</body>
+</html>
+
+/* Page background */
+
+body{
+    background:#bfbfbf;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main card container */
+
+.card{
+    max-width:650px;      /* smaller so it fits screen */
+    margin:40px auto;
+    background:#efefef;
+    padding:35px 45px;
+    border-radius:20px;
+}
+
+/* Main heading */
+
+h1{
+    font-family:'Oswald', sans-serif;
+    font-size:70px;       /* reduced size */
+    color:#3f8f13;
+    text-align:center;
+    margin:0 0 20px 0;
+}
+
+/* Section headings */
+
+h2{
+    font-family:'Oswald', sans-serif;
+    font-size:32px;       /* reduced size */
+    color:#3f8f13;
+    text-align:center;
+    margin-top:35px;
+}
+
+/* Paragraph text */
+
+p{
+    font-size:15px;
+    line-height:1.6;
+    color:#333;
+}
+
+/* Green info box */
+
+.fact{
+    background:#4aa31a;
+    color:white;
+    padding:20px;
+    border-radius:18px;
+    margin:25px 0;
+}
+
+.fact h3{
+    font-family:'Oswald', sans-serif;
+    font-size:22px;
+    margin-top:0;
+}
+
+.fact p{
+    color:white;
+}
