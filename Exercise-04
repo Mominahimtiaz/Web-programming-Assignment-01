@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Wondering Photographer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <img src="images/TheDivider.png" alt="" class="divider-img" aria-hidden="true">
+        <div class="cart-container">
+            <img src="images/shopping.svg" alt="Shopping Cart" class="cart-icon">
+        </div>
+    </header>
+
+    <main class="gallery-container">
+        <div class="gallery-item">
+            <img src="images/OceanPhoto.jpg" alt="Ocean" class="gallery-img">
+            <p class="caption">This was from a fabulous trip to the cost of Greenland with my family. The water was lovely- but very cold!</p>
+            <button type="button" class="btn-basket">Add to basket</button>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/BridgePhoto.jpg" alt="Bridge" class="gallery-img">
+            <p class="caption">A picture of the Golden Gate Bridge. New York! New York!</p>
+            <button type="button" class="btn-basket">Add to basket</button>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/ValleyPhoto.jpg" alt="Valley" class="gallery-img">
+            <p class="caption">Another great photo from Greenland. It's a river valley where a glacier used to be.</p>
+            <button type="button" class="btn-basket">Add to basket</button>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/WaterfallPhoto.jpg" alt="Waterfall" class="gallery-img">
+            <p class="caption">The waterfall made such a lovely sound. I could have fallen asleep!</p>
+            <button type="button" class="btn-basket">Add to basket</button>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p class="copyright">Copyright The Wondering Photographer 2018.</p>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About me</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.btn-basket').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Added to basket!');
+            });
+        });
+    </script>
+</body>
+</html>
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: #ff69b4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.site-header, .gallery-container, .site-footer { width: 70%; max-width: 500px; }
+.site-header { display: flex; flex-direction: column; align-items: center; margin-top: 15px; }
+.divider-img { width: 400px; }
+.cart-container { width: 100%; display: flex; justify-content: flex-end; padding-right: 15px; }
+.cart-icon { width: 30px; }
+
+.gallery-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+.gallery-img { width: 100%; display: block; margin-bottom: 4px; }
+
+.caption {
+    background-color: #f5fbe7;
+    color: #62dbf1;
+    width: 100%;
+    padding: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-basket {
+    background-color: #faf4f4;
+    border: 1px solid #ebe8e8;
+    padding: 1px 6px;
+    font-size: 09px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* Footer Section */
+.site-footer { 
+    padding: 0px 0px; 
+    text-align: left; /* Forces content to the left */
+}
+
+.copyright { 
+    font-weight: bold; 
+    margin-bottom: 10px;
+    text-decoration: none; 
+}
+
+.footer-divider { 
+    border: 0; 
+    border-top: 1px solid #000; 
+    margin: 0 0 15px 0; /* Clear space around the divider */
+}
+
+.footer-nav ul { list-style-type: square; padding-left: 20px; }
+
+.footer-nav a { 
+    color: #1616fe; 
+    font-weight: bold; 
+    text-decoration: underline; /* Links HAVE the underline */
+}   
+
