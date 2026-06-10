@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J's Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>J's Gallery</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <section class="intro-section">
+            <img src="images/cow.jpg" alt="Highland Cow" class="float-right-img">
+            
+            <p>
+                Lorem ipsum odor amet, consectetuer adipiscing elit. 
+                Praesent mollis adipiscing per id libero libero. Tempus 
+                pretium netus molestie scelerisque facilisis tristique 
+                volutpat ultricies. Nostra ligula ac pulvinar rutrum non 
+                rhoncus mauris facilisi. Quisque maximus commodo 
+                sollicitudin, montes congue imperdiet. Est malesuada 
+                vivamus vestibulum ante aenean class. Per integer 
+                aptent ullamcorper sagittis posuere dignissim morbi 
+                scelerisque. Fringilla primis sagittis lorem erat integer, 
+                vulputate nullam. Porta purus habitant id fermentum 
+                nec ex, proin mauris sem.
+            </p>
+            
+            <p>
+                Lectus ultrices nibh lobortis tempus facilisis sit 
+                conubia taciti. Non torquent amet nibh elit ante 
+                fermentum praesent cras. Et suspendisse egestas eros 
+                erat aptent sollicitudin. Nulla tortor purus posuere 
+                auctor himenaeos malesuada. Turpis phasellus enim 
+                
+                venenatis aliquam pellentesque senectus, id ultrices. 
+                Praesent tellus consequat phasellus cubilia mattis 
+                mauris natoque litora. Fringilla cursus montes inceptos 
+nec venenatis platea.
+            </p>
+        </section>
+
+        <section class="media-grid">
+            <div class="grid-item">
+                <video controls>
+                    <source src="images/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="grid-item">
+                <img src="images/img4598.jpg" alt="Misty train platform">
+            </div>
+
+            <div class="grid-item">
+                <img src="images/img4532.jpg" alt="Vintage camera">
+            </div>
+            <div class="grid-item">
+                <img src="images/photo_2018_02_01.jpg" alt="Hills landscape">
+            </div>
+
+            <div class="grid-item">
+                <img src="images/photo_2018_02_31.jpg" alt="Snowy mountains">
+            </div>
+            <div class="grid-item">
+                <img src="images/johns_car.jpg" alt="Old car in snow">
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
+
+/* General Page Styling */
+body {
+    background-color: #dcdcdc; /* Exact assignment gray backdrop */
+    font-family: "Times New Roman", Times, serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    line-height: 1.36; /* Tightened line-height to flawlessly match spec text density */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Main Layout Container */
+.container {
+    max-width: 950px; /* Precise container boundary */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header & Navigation Styling */
+header {
+    text-align: center;
+    padding: 35px 0 15px 0;
+}
+
+header h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 4.9rem; 
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+
+nav a {
+    font-family: "Times New Roman", Times, serif;
+    color: #0000ff;
+    text-decoration: underline;
+    margin: 0 32px; 
+    font-size: 1.35rem;
+}
+
+/* Intro Section Layout Configuration */
+.intro-section {
+    margin-bottom: 30px;
+}
+
+.intro-section p {
+    font-size: 1.44rem; /* Adjusted font size for exact word breaking metrics */
+    text-align: justify;
+    margin-top: 1;
+    margin-bottom: 10px;
+    letter-spacing: 0.04px;
+}
+
+/* The Highland Cow Image Layout */
+.float-right-img {
+    float: right;
+    width: 420px; 
+    height: 487px; /* Exact height to accommodate 5 wrapping lines next to it */
+    object-fit: cover;
+    margin-left: 15px;
+    margin-bottom: 3px; 
+    border: 1px solid #999;
+}
+
+/* Clearfix Layout Guard */
+.intro-section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Media Grid Section (Mosaic Pattern) */
+.media-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.grid-item {
+    height: 330px;
+    overflow: hidden;
+}
+
+/* Row 1 */
+.grid-item:nth-child(1) { width: 65%; }
+.grid-item:nth-child(2) { width: 35%; }
+
+/* Row 2 */
+.grid-item:nth-child(3) { width: 35%; }
+.grid-item:nth-child(4) { width: 65%; }
+
+/* Row 3 */
+.grid-item:nth-child(5) { width: 65%; }
+.grid-item:nth-child(6) { width: 35%; }
+
+/* Media Elements Behavior */
+.grid-item img, 
+.grid-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
